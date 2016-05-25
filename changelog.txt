@@ -1,0 +1,4 @@
+*** WooCommerce Google Experiments Changelog ***
+
+2016.05.25 - version 1.0.0
+ * First release
