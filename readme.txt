@@ -1,4 +1,4 @@
-=== WooCommerce Google Experiments ===
+=== WooSplit - Google Experiments for WooCommerce ===
 Contributors: shadim
 Donate link: http://woosplit.com/
 Tags: comments, spam
@@ -8,11 +8,11 @@ Stable tag: 4.5.2
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Add Google Experiments on WooCommerce pages, products and endpoints
+Adds Google Experiments on WooCommerce pages, products and endpoints
 
 == Description ==
 
-WooCommerce Google Experiments enables the management of Google Experiments on WooCommerce pages.  You can add as many Google Experiments as needed and specify which page, product or endpoint your experiment should be run on.
+WooSplit - Google Experiments for WooCommerce enables the management of Google Experiments on WooCommerce pages.  You can add as many Google Experiments as needed and specify which page, product or endpoint your experiment should be run on.
 
 Plugin Features:
 
