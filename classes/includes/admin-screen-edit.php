@@ -1,6 +1,6 @@
 <div class="wrap woocommerce">
 	<div id="icon-woocommerce" class="icon32 icon32-woocommerce-email"></div>
-	<h2><?php _e('Add Notification', 'wc_google_experiments'); ?></h2>
+	<h2><?php _e('Add Experiment', 'wc_google_experiments'); ?></h2>
 
 	<form class="add" method="post">
 

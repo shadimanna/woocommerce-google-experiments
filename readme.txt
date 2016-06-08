@@ -1,14 +1,14 @@
 === WooSplit - Google Experiments for WooCommerce ===
 Contributors: shadim
 Donate link: http://woosplit.com/
-Tags: comments, spam
+Tags: google experiments, google analytics, ab testing, ab split testing, woocommerce
 Requires at least: 4.1
 Tested up to: 4.5.2
 Stable tag: 4.5.2
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Adds Google Experiments on WooCommerce pages, products and endpoints
+Add Google Experiments on WooCommerce pages, products and endpoints
 
 == Description ==
 
@@ -40,8 +40,9 @@ Only the first one will be added to the page.
 
 == Screenshots ==
 
-1. WooCommerce Google Experiment list
+1. Get Google ID and Google Key 
 2. Add Google Experiment to WooCommerce page, product or endpoint
+3. WooCommerce Google Experiment list
 
 == Changelog ==
 
