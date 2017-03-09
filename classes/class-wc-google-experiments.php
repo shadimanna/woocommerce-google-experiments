@@ -23,8 +23,8 @@ class WC_Google_Experiments {
 			$this->admin = new WC_Google_Experiments_Admin();
 		}
 
-		// Hook experiments
-		add_action( 'wp_head', array( $this, 'embed_experiments_tracking' ) );
+		// Hook experiments, early before Google Analytics code (5)
+		add_action( 'wp_head', array( $this, 'embed_experiments_tracking' ), 5 );
 	}
 
 	private function experiment_tracking_code($experiment_key)
@@ -85,12 +85,12 @@ class WC_Google_Experiments {
 			$object_id = is_wc_endpoint_url( 'add-payment-method' ) ? $end_points['$end_pointsadd-payment-method'] : $object_id;
 		}
 
-		echo "object_id: ".$object_id;
+		// echo "object_id: ".$object_id;
 			
 		if (!empty($object_id)) {
 			$trigger_ge = $wpdb->get_var( "SELECT ge_id FROM {$wpdb->prefix}woocommerce_google_experiments_triggers WHERE object_id = '" . $object_id . "' order by ge_id desc;" );
 
-			echo "trigger_ge: ".$trigger_ge;
+			// echo "trigger_ge: ".$trigger_ge;
 			if (!empty($trigger_ge)) {
 				$experiment_key = $wpdb->get_var( "SELECT experiment_key FROM {$wpdb->prefix}woocommerce_google_experiments WHERE ge_id = " . $trigger_ge . ";" );
 
@@ -98,7 +98,7 @@ class WC_Google_Experiments {
 			} elseif ( is_product() ) { // check if there is an "All Products" trigger
 				$trigger_ge = $wpdb->get_var( "SELECT ge_id FROM {$wpdb->prefix}woocommerce_google_experiments_triggers WHERE object_id = '0' order by ge_id desc;" );
 
-				echo "trigger_ge 2: ".$trigger_ge;
+				// echo "trigger_ge 2: ".$trigger_ge;
 				if (!empty($trigger_ge)) {
 					$experiment_key = $wpdb->get_var( "SELECT experiment_key FROM {$wpdb->prefix}woocommerce_google_experiments WHERE ge_id = " . $trigger_ge . ";" );
 
