@@ -3,11 +3,14 @@
  * Plugin Name: WooCommerce Google Experiments
  * Plugin URI: https://github.com/shadimanna/woocommerce-google-experiments
  * Description: Add Google Experiements on WooCommerce pages, products and endpoints
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: Shadi Manna
  * Author URI: http://progressusmarketing.com/
  * License: GPLv3
  */
+if ( ! defined( 'ABSPATH' ) ) {
+  exit;
+}
 
 /**
  * Required functions

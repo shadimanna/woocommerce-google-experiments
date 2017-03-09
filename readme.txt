@@ -3,8 +3,8 @@ Contributors: shadim
 Donate link: http://woosplit.com/
 Tags: google experiments, google analytics, ab testing, ab split testing, woocommerce
 Requires at least: 4.1
-Tested up to: 4.5.2
-Stable tag: 4.5.2
+Tested up to: 4.7.3
+Stable tag: 4.7.3
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -45,6 +45,10 @@ Only the first one will be added to the page.
 3. WooCommerce Google Experiment list
 
 == Changelog ==
+
+= 1.0.1 =
+* Bug fix remove logging message
+* Bug fix place Google Experiment script above Google Analytics code
 
 = 1.0 =
 * First public release
